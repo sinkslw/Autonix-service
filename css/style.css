@@ -1,0 +1,125 @@
+/* --- Секция Онлайн-Записи (Booking) --- */
+.booking-section {
+    background-color: var(--color-primary); /* Синий фон */
+    padding: 80px 0;
+    color: white;
+}
+
+.booking-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.booking-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.booking-text h2 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.booking-text p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefit-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+.benefit-list .fas {
+    color: var(--color-secondary); /* Оранжевая галочка */
+    margin-right: 15px;
+    font-size: 1.3em;
+}
+
+.booking-form-wrapper {
+    flex: 1;
+    max-width: 50%;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-group.half-width {
+    width: calc(50% - 10px); /* 50% с учетом 20px зазора между элементами */
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="tel"],
+.booking-form input[type="date"],
+.booking-form input[type="time"],
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: var(--color-text-dark);
+}
+
+.booking-form textarea {
+    resize: vertical;
+}
+
+/* Переопределение кнопки для формы */
+.booking-form .btn-primary {
+    margin-top: 10px;
+}
+
+/* Адаптивность для формы */
+@media (max-width: 992px) {
+    .booking-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .booking-text, .booking-form-wrapper {
+        max-width: 100%;
+    }
+    .benefit-list {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .benefit-list li {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-group.half-width {
+        width: 100%;
+    }
+}
