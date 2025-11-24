@@ -1,0 +1,51 @@
+<section id="booking" class="booking-section">
+            <div class="container">
+                <div class="booking-content">
+                    <div class="booking-text">
+                        <h2>Записаться на обслуживание онлайн</h2>
+                        <p>Забронируйте удобное время для визита в Autonix Service. Мы свяжемся с вами в течение 15 минут для подтверждения записи.</p>
+                        <ul class="benefit-list">
+                            <li><i class="fas fa-check-circle"></i> Экономия времени</li>
+                            <li><i class="fas fa-check-circle"></i> Гарантия свободного места</li>
+                            <li><i class="fas fa-check-circle"></i> Прозрачность процесса</li>
+                        </ul>
+                    </div>
+                    <div class="booking-form-wrapper">
+                        <form class="booking-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя:</label>
+                                <input type="text" id="name" name="name" required placeholder="Иван">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон:</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
+                            </div>
+                            <div class="form-group">
+                                <label for="service-type">Вид услуги:</label>
+                                <select id="service-type" name="service-type" required>
+                                    <option value="">Выберите услугу</option>
+                                    <option value="diagnosis">Компьютерная диагностика</option>
+                                    <option value="to">Плановое ТО / Замена масла</option>
+                                    <option value="engine-repair">Ремонт ДВС</option>
+                                    <option value="suspension-repair">Ремонт подвески</option>
+                                    <option value="other">Другое (укажите в комментарии)</option>
+                                </select>
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="date">Дата:</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="time">Время:</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="comment">Комментарий (Марка авто, год):</label>
+                                <textarea id="comment" name="comment" rows="3" placeholder="Например: Renault Logan, 2018 г., нужен ремонт тормозов"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">Подтвердить запись</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
